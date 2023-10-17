@@ -1,0 +1,11 @@
+import { Company } from "./Company.js";
+import { FrontEnd } from "./FrontEnd.js";
+import { BackEnd } from "./BackEnd.js";
+let vamsi = new FrontEnd("vamsi", "xstack_training");
+let siddhu = new BackEnd("siddhu", "Backend_training");
+let sreeja = new BackEnd("sreeja", "Amazon");
+let shasank = new FrontEnd("Shasank", "Google");
+let lavanya = new FrontEnd("lavanya", "Microsoft");
+let company = new Company([shasank, lavanya, sreeja, siddhu, vamsi]);
+console.log("Employee names\n" + company.getNameList());
+console.log("Employee projects\n" + company.getProjectList());
